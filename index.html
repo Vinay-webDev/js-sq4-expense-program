@@ -13,30 +13,31 @@
             <h2>😀AN APP FOR STUPIDS😀</h2>
         </div>
         <div id="inputs">
+            <br>
             <div id="member-A">
                 <label for="valueA">member A:</label>
                 <input type="number" id="valueA">
-                <button>submit</button>
+                <button onclick="pushValueA()" >submit</button>
             </div> <br>
             <div id="member-B">
                 <label for="valueB">member B:</label>
                 <input type="number" id="valueB">
-                <button>submit</button>
+                <button onclick="pushValueB()" >submit</button>
             </div> <br>
             <div id="member-C">
                 <label for="valueC">member C:</label>
                 <input type="number" id="valueC">
-                <button>submit</button>
+                <button onclick="pushValueC()" >submit</button>
             </div> <br>
             <div id="member-D">
                 <label for="valueD">member D:</label>
                 <input type="number" id="valueD">
-                <button>submit</button>
+                <button onclick="pushValueD()" >submit</button>
             </div> <br>
         </div>
         <div id="sum">
-            <button>calculate total</button>
-            <label for="sum"> = sum</label>
+            <button onclick="calculateSum()">calculate total</button>
+            <label id="total" for="sum"> = sum</label>
         </div>
     </div>
 </body>
