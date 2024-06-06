@@ -14,29 +14,29 @@ let total = [];
 function pushValueA() {
     let memberA = [];
     let valueA = document.getElementById("valueA").value;
-    
-    total.push(valueA);
-    memberA.push(valueA);
+    //typecasting
+    total.push(Number(valueA));
+    memberA.push(Number(valueA));
     //console.log(memberA);
     //console.log(valueA);
 }
 function pushValueB() {
     let memberB = [];
     let valueB = document.getElementById("valueB").value;
-    total.push(valueB);
-    memberB.push(valueB);
+    total.push(Number(valueB));
+    memberB.push(Number(valueB));
 }
 function pushValueC() {
     let memberC = [];
     let valueC = document.getElementById("valueC").value;
-    total.push(valueC);
-    memberC.push(valueC);
+    total.push(Number(valueC));
+    memberC.push(Number(valueC));
 }
 function pushValueD() {
     let memberD = [];
     let valueD = document.getElementById("valueD").value;
-    total.push(valueD);
-    memberD.push(valueD);
+    total.push(Number(valueD));
+    memberD.push(Number(valueD));
 }
 function calculateSum() {
     let sum = 0;
@@ -44,8 +44,9 @@ function calculateSum() {
         sum += total[i];
     }
     let totalResult = document.getElementById("total");
-    totalResult.textContent = sum;
+    totalResult.textContent = `= ${sum}`;
     console.log(total);
+    console.log(sum);
 }
 
 
