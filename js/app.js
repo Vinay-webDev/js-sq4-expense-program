@@ -11,6 +11,7 @@
 /* ==>> 1. input value is always gonna be string data type so need to convert or typecast it to number before we push to arrays (total, member arrays) */
 let total = [];
 
+
 function pushValueA() {
     let memberA = [];
     let valueA = document.getElementById("valueA").value;
@@ -49,10 +50,20 @@ function calculateSum() {
     console.log(total);
     console.log(sum);
 }
+//2./////////////////////////
+const view1 = document.getElementById("view1");
+const view2 = document.getElementById("view2");
+let rightClick = document.getElementById("right");
+rightClick.addEventListener("click", (event) => {
+    view1.style.display = "none";
+    view2.style.display = "block";
+})
 
-
-
-
+let leftClick = document.getElementById("left");
+leftClick.addEventListener("click", (event) => {
+    view2.style.display = "none";
+    view1.style.display = "block";
+})
 
 
 

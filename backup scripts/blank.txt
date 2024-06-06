@@ -111,9 +111,19 @@ label {
     font-family:'Franklin Gothic Medium';
     font-weight: bold;
 }
-
-
-
+////2////2///////2////2//////////////////////////////
+                    <div id="member-A">
+                        <button id="A-total">member A total</button>
+                        <label id="A-total-text" for="A-total"> = Rs 0/-</label>
+                    </div> <br>
+                    <div id="member-B">
+                        <button id="B-total">member B total</button>
+                        <label id="B-total-text" for="B-total"> = Rs 0/-</label>
+                    </div>
+                    <div id="member-C">
+                        <button id="C-total">member C total</button>
+                        <label id="B-total-text" for="B-total"> = Rs 0/-</label>
+                    </div>
 
 
 
