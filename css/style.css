@@ -20,9 +20,20 @@ main {
     justify-content: center;
     align-items: center;
     background-color: hsl(152, 100%, 50%);
-    width:auto;
+    width:70%;
+    height: 75vh;
+    border: none;
 }
-
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    width: 65%;
+    height: 48px;
+    background-color:hsl(152, 100%, 35%)
+}
 
 
 
