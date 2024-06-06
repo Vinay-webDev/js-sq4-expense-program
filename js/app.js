@@ -19,6 +19,7 @@ function pushValueA() {
     memberA.push(Number(valueA));
     //console.log(memberA);
     //console.log(valueA);
+    
 }
 function pushValueB() {
     let memberB = [];
@@ -44,10 +45,116 @@ function calculateSum() {
         sum += total[i];
     }
     let totalResult = document.getElementById("total");
-    totalResult.textContent = `= ${sum}`;
+    totalResult.textContent = `= $${sum}/-`;
     console.log(total);
     console.log(sum);
 }
+
+
+/* <div id="container-main">
+        <div id="h2">
+            <h2>😀AN APP FOR STUPIDS😀</h2>
+        </div> 
+
+<div id="inputs">
+            <br>
+            <div id="member-A">
+                <label for="valueA">member A:</label>
+                <input type="number" id="valueA">
+                <button onclick="pushValueA()" >submit</button>
+            </div> <br>
+            <div id="member-B">
+                <label for="valueB">member B:</label>
+                <input type="number" id="valueB">
+                <button onclick="pushValueB()" >submit</button>
+            </div> <br>
+            <div id="member-C">
+                <label for="valueC">member C:</label>
+                <input type="number" id="valueC">
+                <button onclick="pushValueC()" >submit</button>
+            </div> <br>
+            <div id="member-D">
+                <label for="valueD">member D:</label>
+                <input type="number" id="valueD">
+                <button onclick="pushValueD()" >submit</button>
+            </div> <br>
+        </div>
+        <div id="sum">
+            <button onclick="calculateSum()">calculate total</button>
+            <label id="total" for="sum"> = $0/-</label>
+        </div>        */
+
+/* body {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(188, 100%, 69%);
+}
+#container-main {
+    background-color: hsl(156, 100%, 50%);
+    border: none;
+    border-radius: 10px;
+}
+#h2 {
+    background-color: hsla(156, 100%, 30%, 0.8);
+}
+#inputs {
+    background-color: hsla(180, 100%, 50%, 0.5);
+}
+input {
+    font-size: 0.75em;
+    width: 150px;
+    height: 25px;
+}
+button {
+    font-size: 0.65em;
+    padding: 7.5px;
+    background-color: hsla(105, 100%, 50%, 0.928);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+#sum {
+    background-color: hsla(59, 100%, 69%, 0.95);
+    padding: 15px;
+}
+label {
+    font-family:'Franklin Gothic Medium';
+    font-weight: bold;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
