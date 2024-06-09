@@ -124,7 +124,48 @@ label {
                         <button id="C-total">member C total</button>
                         <label id="B-total-text" for="B-total"> = Rs 0/-</label>
                     </div>
+//////1./////1.///////1.////////1.////////
+let total = [];
 
+
+function pushValueA() {
+    let memberA = [];
+    let valueA = document.getElementById("valueA").value;
+    //typecasting
+    total.push(Number(valueA));
+    memberA.push(Number(valueA));
+    //console.log(memberA);
+    //console.log(valueA);
+    
+}
+function pushValueB() {
+    let memberB = [];
+    let valueB = document.getElementById("valueB").value;
+    total.push(Number(valueB));
+    memberB.push(Number(valueB));
+}
+function pushValueC() {
+    let memberC = [];
+    let valueC = document.getElementById("valueC").value;
+    total.push(Number(valueC));
+    memberC.push(Number(valueC));
+}
+function pushValueD() {
+    let memberD = [];
+    let valueD = document.getElementById("valueD").value;
+    total.push(Number(valueD));
+    memberD.push(Number(valueD));
+}
+function calculateSum() {
+    let sum = 0;
+    for (let i = 0; i < total.length; i++ ) {
+        sum += total[i];
+    }
+    let totalResult = document.getElementById("total");
+    totalResult.textContent = `= Rs ${sum}/-`;
+    console.log(total);
+    console.log(sum);
+}
 
 
 
