@@ -38,6 +38,9 @@ body {
     display: none;
 
 }
+#view3 {
+    display: none;
+}
 #inputs {
     background-color: hsla(180, 100%, 50%, 0.5);
 }

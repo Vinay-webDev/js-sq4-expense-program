@@ -56,16 +56,27 @@ function calculateSum() {
 //2.////2.////2.////2.////2.////2.////2./////2./////2.////
 const view1 = document.getElementById("view1");
 const view2 = document.getElementById("view2");
+const view3 = document.getElementById("view3");
 let rightClick = document.getElementById("right");
+
 rightClick.addEventListener("click", (event) => {
     view1.style.display = "none";
     view2.style.display = "block";
+    rightClick.addEventListener("click", (event) => {
+        view2.style.display = "none";
+        view3.style.display = "block";
+    })
 })
 
 let leftClick = document.getElementById("left");
+
 leftClick.addEventListener("click", (event) => {
-    view2.style.display = "none";
-    view1.style.display = "block";
+    view3.style.display = "none";
+    view2.style.display = "block";
+    leftClick.addEventListener("click", (event) => {
+        view2.style.display = "none";
+        view1.style.display = "block";
+    })
 })
 ///3///3///3////3////3/////3/////3/////
 // individual total or sum;
